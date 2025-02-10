@@ -23,3 +23,18 @@ ul {
 li:nth-child(odd) {
     background-color: pink;
 }
+
+.navigation #index,
+#notes {
+    list-style-type: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    background-color: cyan;
+    border-style: dotted;
+}
+
+.navigation a:hover {
+    background-color: brown;
+}
