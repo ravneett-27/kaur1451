@@ -2,3 +2,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-family: 18px;
 }
+
+header,
+footer {
+    background-color: red;
+}
+
+.site-title {
+    color: white;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
