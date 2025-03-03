@@ -1,0 +1,21 @@
+.wrapper {
+    background-color: grey;
+    width: 400px;
+}
+
+.picture {
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+footer {
+    clear: both;
+}
