@@ -1,101 +1,155 @@
+/* Body backhground color */
 body {
     background-color: #AAD4CF;
+    /*light teal bg color*/
 }
 
-
+/* Wrapper for entire page */
 .wrapper {
     background-color: #D4E9E7;
+    /* light greenish bg color for the wrapper */
     width: 700px;
+    /* fixed width for the wrapper */
     margin: auto;
+    /* centers the wrapper horizontally */
     position: relative;
-
+    /* Positions elements inside the wrapper relatively */
 }
 
+/* Container for header items(text and image) */
+.container {
+    position: relative;
+    /* allows absolute posiitoning of children elements */
+    text-align: center;
+    /* centers the text horizontally */
+    color: white;
+    /* makes font color white */
+}
+
+/* Styling for the image */
+#img {
+    z-index: 1;
+    /* places the image behind other elements */
+    position: relative;
+    /* allows positioning relative to its container */
+    height: auto;
+    /* keeps the image's aspect ratio intact */
+    width: 100%;
+    /* makes image responsive with full width */
+}
+
+/* Styling for the text written over the image */
+#lone-fish {
+    z-index: 2;
+    /* places the text over the image */
+    position: absolute;
+    /* allows the text to be positioned absoltely */
+    top: 60%;
+    /* Positions the logo vertically in the middle of the image slightly below the center*/
+    left: 50%;
+    /* centers the logo horizontally */
+    transform: translate(-50%, -50%);
+    /* centers the logo with respect to its positions */
+    font-size: 3rem;
+    /* sets font size */
+}
+
+/* Navigation styles */
 nav ul {
     padding: 10px 0;
+    /* adds padding to the top and bottom of the navigation */
     display: flex;
+    /* uses flexbox for layout */
     justify-content: center;
+    /* centers the nav ietms horizontally */
     align-items: center;
-    padding: 10px 0;
+    /* centers the nav items vertically */
 }
-
-
 
 nav li {
     display: inline-block;
+    /* makes each nav item inline */
     padding: 10px 10px;
+    /* adds padding inside each nav item */
     font-weight: bold;
+    /* makes text bold */
 }
 
 nav ul li a {
     text-decoration: none;
+    /* removes underline from links */
     color: black;
+    /* sets the text color to black */
     padding: 0 20px;
+    /* adds horizontal padding around the link */
 }
 
+/* Adds a border between navigation itmes, except for last one */
 nav li:not(:last-child) {
     border-right: 1px solid black;
+    /* creates a black border between items */
 }
 
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-#img {
-    z-index: 1;
-    position: relative;
-    height: auto;
-    width: 100%;
-}
-
-#lone-fish {
-    z-index: 2;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-}
-
-form {
-    border: 1px solid black;
-    padding: 10px;
-}
-
+/* Styling for the image wrapped around text in life od starfish article */
 .picture {
     background-image: url(../images/lone-starfish.jpg);
+    /* adds an image left to the text and wraps text around it */
     background-size: cover;
+    /* ensures that image covers the entire area */
     height: 100px;
+    /* sets the height of the picture */
     width: 100px;
+    /* sets the width of the picture */
     float: left;
+    /* makes the picture float to the left of the text */
     padding: 20px;
+    /* adds padding inside the picture */
     margin: 10px;
+    /* adds margin around picture */
 }
 
+/* form for styling contact */
+form {
+    border: 1px solid black;
+    /* adds a black border around the form */
+    padding: 10px;
+    /* adds padding inside the form */
+}
+
+/* For block display, id's are added to different elements of form and width is adjudted according to the box in which form is put */
 #name,
 #email,
 #message {
     display: block;
+    /* makes each input field a block element */
     box-sizing: border-box;
+    /* includes padding and borders in the element's total width */
     width: 100%;
-
-
+    /* makes the input field take up the full width of their container */
 }
 
+/* Styling the send button  */
 button {
     display: block;
+    /* makes the button a block-level elements */
     padding: 10px 10px;
+    /* adds padding inside the button */
 }
 
+/* clearfix to clear floated elements */
 .clearfix::after {
     content: "";
+    /* clears an empty content to clear float */
     clear: both;
+    /* clears both left and right floated elements */
     display: block;
+    /* ensures the clearfix takes up space */
 }
 
+/* Footer styling */
 footer {
     clear: both;
+    /* clears any floated elements before footer */
     text-align: right;
+    /* aligns the footer text to the right */
 }
