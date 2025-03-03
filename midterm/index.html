@@ -10,14 +10,16 @@
 
 <body>
     <div class="wrapper">
+        <!-- header section with image and text over it -->
         <header>
             <div class="container">
                 <h1 id="lone-fish">Lone Starfish</h1>
+                <!-- Main heading -->
                 <img alt="star-fish" id="img" src="images/lone-starfish-wide.jpg">
             </div>
 
-
             <nav>
+                <!-- Navigation meny with links to different sections -->
                 <ul>
                     <li class="border-right"><a href="#">HOME</a></li>
                     <li class="border-right"><a href="#">STORY</a></li>
@@ -25,12 +27,16 @@
                 </ul>
             </nav>
         </header>
+
+        <!-- Main content area -->
+
         <main>
             <article>
                 <h2>Life of Starfish</h2>
             </article>
             <article class="clearfix">
                 <div class="picture"></div>
+                <!-- Article about starfish life  with an image-->
                 <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
                     catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
                     batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike
@@ -49,6 +55,7 @@
                 </p>
             </article>
             <article>
+                <!-- article section with a list of facts about starfish -->
                 <h3>Facts about Starfish</h3>
                 <ul>
                     <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
@@ -60,14 +67,25 @@
                 </ul>
             </article>
             <article>
+                <!-- Article section with a contact form for visitors -->
                 <h4>Contact to learn more</h4>
                 <form action="contact.html" method="post">
+                    <!-- Form feilds for user to input their name -->
                     <label for="name">Your Name</label>
                     <input id="name" type="text">
+
+                    <!-- Form feilds for user to input their email -->
+
                     <label for="email">Your Email</label>
                     <input id="email" type="email">
+
+                    <!-- Form feilds for user to input their message -->
+
                     <label for="message">Your Message</label>
                     <textarea id="message"></textarea>
+
+                    <!-- Radio buttons for visitor's response on whether they want to visit or not -->
+
                     <p>Would you like to visit starfish?</p>
                     <label for="yes">Yes</label>
                     <input type="radio" id="yes" name="visit" value="Yes">
@@ -75,11 +93,17 @@
                     <input type="radio" id="no" name="visit" value="no">
                     <label for="maybe">Maybe</label>
                     <input type="radio" id="maybe" name="visit" value="maybe">
+
+                    <!-- Send button for submission of the form -->
+
                     <button type="submit">Send</button>
                 </form>
             </article>
 
         </main>
+
+        <!-- Footer with copyright notice -->
+
         <footer>
             <p>&copy; Lone StarFish</p>
         </footer>
