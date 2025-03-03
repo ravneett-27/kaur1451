@@ -65,7 +65,7 @@ form {
 }
 
 .picture {
-    background-image: url(/images/lone-starfish.jpg);
+    background-image: url(../images/lone-starfish.jpg);
     background-size: cover;
     height: 100px;
     width: 100px;
