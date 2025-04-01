@@ -13,8 +13,9 @@
         <header>
             <div class="container">
                 <nav>
+                    <img alt="logo" id="img" src="images/logo.png">
                     <ul>
-                        <img alt="logo" id="img" src="images/logo.png">
+
                         <li>Home</li>
                         <li>About us</li>
                         <li>Services</li>
@@ -22,7 +23,7 @@
                         <li>Contact</li>
                     </ul>
                 </nav>
-                <input id="searchbar" type="name" placeholder="Search">
+                <input id="searchbar" type="text" placeholder="Search">
             </div>
         </header>
         <!-- search bar logo is missing -->
@@ -123,10 +124,10 @@
                 <label for="email">Email</label>
                 <input id="email" type="email">
 
-                <label for="Message">Message</label>
-                <input id="message" type="textarea">
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
 
-                <button type="send">Send</button>
+                <button type="submit">Send</button>
             </form>
         </div>
         <div class="hours-of-operation">
@@ -152,7 +153,7 @@
                         <li>Services</li>
                         <li>Team</li>
                         <li>Contact</li>
-                        <li><input type="name" id="search-2" placeholder="Search"></li>
+                        <li><input type="text" id="search-2" placeholder="Search"></li>
                     </ul>
                 </nav>
             </div>
@@ -228,7 +229,7 @@
             <button>Learn More</button>
             <div class="team-2">
                 <p>Our Team</p>
-                <img src="images/john.jpg" src="john">
+                <img src="images/john.jpg" alt="john">
                 <p>John Doe</p>
                 <p>CEO and Co-owner</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequuntur nihil impedit aliquid
@@ -244,19 +245,18 @@
             </div>
             <div class="contact-location-2">
                 <form action="index.html" method="post">
-                    <form>
-                        <label for="fname">Full Name</label>
-                        <input id="name" type="text">
+                    <label for="mobile_name">Full Name</label>
+                    <input id="mobile_name" type="text">
 
-                        <label for="email">Email</label>
-                        <input id="email" type="email">
+                    <label for="mobile_email">Email</label>
+                    <input id="mobile_email" type="email">
 
-                        <label for="message">Message</label>
-                        <input id="message" type="textarea">
-                        <button type="send"></button>
-                    </form>
-                    <p>location</p>
-                    <!-- add map link here -->
+                    <label for="mobile_message">Message</label>
+                    <textarea id="mobile_message"></textarea>
+                    <button type="submit"></button>
+                </form>
+                <p>location</p>
+                <!-- add map link here -->
             </div>
             <div class="hours">
                 Days Hours
