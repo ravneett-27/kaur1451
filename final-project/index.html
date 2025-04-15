@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,29 +13,39 @@
         <!-- header section with image and text over it -->
         <div class="mobile">
             <header id="header-mobile">
-                <nav>
+                <div class="head-1">
                     <img alt="logo" id="logo-img-mobile" src="images/logo.png">
                     <ul id="nav-mobile">
-
                         <li id="mobile-home">Home</li>
-                        <li id="mobile-about">About us</li>
-                        <li id="mobile-services">Services</li>
-                        <li id="mobile-team">Team</li>
-                        <li id="mobile-contact">Contact</li>
                     </ul>
-                </nav>
+                </div>
+
+                <div class="head-2">
+                    <nav>
+                        <ul>
+                            <li id="mobile-about">About us</li>
+                            <li id="mobile-services">Services</li>
+                            <li id="mobile-team">Team</li>
+                            <li id="mobile-contact">Contact</li>
+                        </ul>
+                    </nav>
+                </div>
+
                 <input id="searchbar" type="text" placeholder="Search">
             </header>
 
             <!-- search bar logo is missing -->
 
             <section class="welcome-mobile">
-                <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, assumenda. Repudiandae commodi
-                    dolore
-                    accusamus quas, nihil harum quo quod voluptate, iste, perferendis sit? Excepturi, dolore! Dolor odio
-                    eligendi sequi excepturi.</p>
-                <button id="mobile-connect-btn">Connect with us</button>
+                <div class="welcome-mobile-text">
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, assumenda. Repudiandae commodi
+                        dolore
+                        accusamus quas, nihil harum quo quod voluptate, iste, perferendis sit? Excepturi, dolore! Dolor
+                        odio
+                        eligendi sequi excepturi.</p>
+                    <button id="mobile-connect-btn">Connect with us</button>
+                </div>
             </section>
 
             <section class="about-mobile">
@@ -52,10 +63,10 @@
                     repudiandae vel!</p>
             </section>
 
+            <h2>Our Services</h2>
             <section class="services-mobile">
-                <h2>Our Services</h2>
 
-                <article id="digital-mobile">
+                <article class="digital-mobile">
                     <img alt="digital" src="images/digital.jpg" id="digital-img-mobile">
                     <h3>Digital Transformation</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, consequuntur necessitatibus aut
@@ -64,7 +75,7 @@
                         nulla
                         assumenda
                         mollitia?</p>
-                    <button id="mobile-digital-btn">Digital Plans</button>
+                    <button id="services-mobile-btn">Digital Plans</button>
                 </article>
 
                 <article class="marketing-mobile">
@@ -77,10 +88,10 @@
                         fugit
                         maxime
                         dolorem explicabo ut!</p>
-                    <button id="mobile-marketing-btn">Marketing Plans</button>
+                    <button id="services-mobile-btn">Marketing Plans</button>
                 </article>
 
-                <article id="video-mobile">
+                <article class="video-mobile">
                     <img alt="video-production" src="images/video.jpg" id="video-img-mobile">
                     <h3>Video Production</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nihil eos harum itaque
@@ -88,10 +99,10 @@
                         aliquid aut nemo illo temporibus? Eius, unde deleniti. Itaque ipsam delectus reiciendis ut
                         suscipit
                         iusto ratione.</p>
-                    <button id="mobile-video-btn">Video Plans</button>
+                    <button id="services-mobile-btn">Video Plans</button>
                 </article>
 
-                <article id="web-mobile">
+                <article class="web-mobile">
                     <img alt="mobile" src="images/web.jpg" id="mobile-web-img">
                     <h3>Web Development</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed sequi aliquam consectetur
@@ -99,10 +110,10 @@
                         commodi reiciendis quae delectus esse! Ex at voluptates eaque, nesciunt quos modi porro officiis
                         nemo
                         eius.</p>
-                    <button id="mobile-web-btn">Web Plans</button>
+                    <button id="services-mobile-btn">Web Plans</button>
                 </article>
 
-                <article id="print-mobile">
+                <article class="print-mobile">
                     <img alt="print" src="images/print.jpg" id="mobile-print-img">
                     <h3>Print</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque modi in totam sit labore,
@@ -110,15 +121,14 @@
                         quia eveniet! Id et exercitationem officiis laudantium, aperiam molestiae dignissimos itaque
                         consequatur
                         dolores laboriosam est.</p>
-                    <button id="mobile-print-btn">Print Plans</button>
+                    <button id="services-mobile-btn">Print Plans</button>
                 </article>
             </section>
 
             <!-- vision section -->
 
-            <article id="vision-mobile">
+            <article class="vision-mobile">
                 <h3>Our Vision</h3>
-                <img alt="vision" src="images/vision.jpg" id="vision-img-mobile">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint recusandae necessitatibus eaque sed
                     quis
                     dicta iusto repellendus dolorum, nostrum assumenda? Est quis placeat cumque itaque optio nisi
@@ -127,11 +137,11 @@
                 <button id="mobile-vision-btn">Learn More</button>
             </article>
 
-            <section id="team-mobile">
+            <section class="team-mobile">
                 <h3>Our team</h3>
-
+                <img alt="john" src="images/john.jpg" id="john-img-mobile">
                 <article id="john-mobile">
-                    <img alt="john" src="images/john.jpg" id="john-img-mobile">
+
                     <h3>John Doe</h3>
                     <p>CEO and Co-Owner</p>
                     <hr>
@@ -142,8 +152,10 @@
                         excepturi possimus et.</p>
                 </article>
 
+                <img alt="bob" src="images/bob.jpg" id="bob-img-mobile">
+
                 <article id="bob-mobile">
-                    <img alt="bob" src="images/bob.jpg" id="bob-img-mobile">
+
                     <h3>Bob Rite</h3>
                     <p>CFO and Co-Owner</p>
                     <hr>
@@ -154,7 +166,7 @@
                 </article>
             </section>
 
-            <section id="contact-mobile">
+            <section class="contact-mobile">
                 <h2>Contact Us</h2>
                 <h2>Send us a message</h2>
                 <form action="index.html" method="post">
@@ -165,16 +177,23 @@
                     <input id="email" type="email">
 
                     <label for="message" id="message-label-mobile">Message</label>
-                    <textarea id="message"></textarea>
+                    <input id="message" type="text">
 
                     <button type="submit" id="send-mobile">Send</button>
                 </form>
             </section>
 
+
             <section id="hours-of-operation">
-                <h3>Days Hours</h3>
-                <p>Monday-Friday 9AM-6PM</p>
-                <p>Saturday-Sunday Closed</p>
+                <h3>Hours of Operation</h3>
+                <div class="hours-grid">
+                    <p>Days</p>
+                    <p>Hours</p>
+                    <p>Monday-Friday</p>
+                    <p>9AM-6PM</p>
+                    <p>Saturday-Sunday</p>
+                    <p> Closed</p>
+                </div>
             </section>
 
             <section id="location-mobile">
@@ -188,8 +207,9 @@
             <p>All images are taken from <a href="#">Unsplash</a></p>
         </footer>
 
+        <h3>Desktop Mockup</h3>
         <div class="desktop">
-            <header class="header-desktop" id="header-desktop">
+            <div class="header-desktop" id="header-desktop">
                 <img alt="logo-desktop" src="images/logo.png" id="logo-img-desktop">
                 <nav>
                     <ul id="nav-desktop">
@@ -202,7 +222,7 @@
                     </ul>
                     <input type="text" id="search-desktop" placeholder="Search">
                 </nav>
-            </header>
+            </div>
 
             <section id="desktop-welcome">
                 <h3>Welcome to Three Star Media</h3>

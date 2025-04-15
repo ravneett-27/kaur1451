@@ -1,0 +1,234 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 20px;
+}
+
+/* 
+for very first page */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+    color: #c78c06;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.head-1 {
+    background-color: #c78c06;
+    color: black;
+    width: 100%;
+    margin: 0 50px;
+}
+
+.head-1 ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.head-2 nav ul li {
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+header #searchbar {
+    width: 100%;
+    /* add that search bar icon */
+}
+
+/* 
+second page */
+
+.welcome-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    background-image: url(images/main-banner.jpg);
+}
+
+.welcome-mobile h1 {
+    font-size: 80px;
+}
+
+.welcome-mobile-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 50px 0px 50px 0px;
+    padding: 10px;
+}
+
+#mobile-connect-btn {
+    background-color: #c78c06;
+    padding: 30px;
+    width: 200px;
+    border: none;
+}
+
+/* 
+add that triangle to the button */
+
+.about-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6ac;
+    padding: 10px;
+}
+
+.about-mobile h2 {
+    font-size: 40px;
+}
+
+/* our services page */
+
+.digital-mobile,
+.marketing-mobile,
+.video-mobile,
+.web-mobile,
+.print-mobile {
+    background-color: #ffe6ac;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.services-mobile img {
+    width: 100%;
+}
+
+#services-mobile-btn {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    width: 200px;
+    border: none;
+    font-size: 15px;
+}
+
+/* fix that triangle icon issue here also */
+
+/* our vision */
+
+.vision-mobile {
+    background-image: url(images/vision.jpg);
+    color: white;
+    padding: 20px;
+}
+
+#mobile-vision-btn {
+    background-color: #0e253e;
+    border-color: coral;
+    color: white;
+    width: 200px;
+    padding: 30px;
+    font-size: 15px;
+}
+
+/* add triangle */
+
+/* our team */
+
+.team-mobile h3 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.team-mobile img {
+    width: 100%;
+}
+
+/* 
+there should be no gap between the img n the bg color fix it */
+
+#john-mobile,
+#bob-mobile {
+    background-color: #ffe6ac;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.team-mobile hr {
+    border: 1px solid coral;
+}
+
+/* contact us page */
+
+.contact-mobile input,
+textarea {
+    display: block;
+    width: 100%;
+}
+
+.contact-mobile #message {
+    height: 100px;
+}
+
+#send-mobile {
+    background-color: #222;
+    color: #c78c06;
+    margin-top: 10px;
+}
+
+/* hrs of operation */
+
+.hours-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px;
+    gap: 0;
+}
+
+.hours-grid p {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.hours-grid p:nth-child(1),
+.hours-grid p:nth-child(2) {
+    background-color: #ffe6ac;
+}
+
+/* 
+for location i m not sure */
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 10px;
+}
+
+footer a {
+    color: inherit;
+}
+
+/* desktop */
+
+.header-desktop {
+    display: flex;
+    background-color: #222;
+    color: #c78c06;
+}
+
+#desktop-home {
+    background-color: #c78c06;
+    padding: 10px;
+    text-align: center;
+    color: #222;
+}
+
+.header-desktop nav ul li {
+    list-style-type: none;
+}
