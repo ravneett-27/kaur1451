@@ -1,14 +1,51 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
+    /* font for entire body */
 }
 
 .wrapper {
     max-width: 1200px;
     margin: 20px;
+    /* this contains both mobile and desktop version */
 }
 
-/* 
-for very first page */
+/* header page of mobile version */
 
 header {
     display: flex;
@@ -40,11 +77,9 @@ header {
 
 header #searchbar {
     width: 100%;
-    /* add that search bar icon */
 }
 
-/* 
-second page */
+/* welcome page for mobile version */
 
 .welcome-mobile {
     display: flex;
@@ -71,8 +106,7 @@ second page */
     border: none;
 }
 
-/* 
-add that triangle to the button */
+/* about section for mobile version */
 
 .about-mobile {
     display: flex;
@@ -85,7 +119,7 @@ add that triangle to the button */
     font-size: 40px;
 }
 
-/* our services page */
+/* our services page for mobile version */
 
 .digital-mobile,
 .marketing-mobile,
@@ -119,9 +153,7 @@ h3 {
     font-size: 15px;
 }
 
-/* fix that triangle icon issue here also */
-
-/* our vision */
+/* our vision for mobile version */
 
 .vision-mobile {
     background-image: url(images/vision.jpg);
@@ -138,9 +170,7 @@ h3 {
     font-size: 15px;
 }
 
-/* add triangle */
-
-/* our team */
+/* our team for mobile version */
 
 .team-mobile h3 {
     font-size: 40px;
@@ -150,9 +180,6 @@ h3 {
 .team-mobile img {
     width: 100%;
 }
-
-/* 
-there should be no gap between the img n the bg color fix it */
 
 #john-mobile,
 #bob-mobile {
@@ -165,7 +192,7 @@ there should be no gap between the img n the bg color fix it */
     border: 1px solid coral;
 }
 
-/* contact us page */
+/* contact us page for desktop */
 
 .contact-mobile input,
 textarea {
@@ -183,7 +210,7 @@ textarea {
     margin-top: 10px;
 }
 
-/* hrs of operation */
+/* hrs of operation for mobile */
 
 .hours-grid {
     display: grid;
@@ -205,6 +232,7 @@ textarea {
     background-color: #ffe6ac;
 }
 
+/* footer for mobile version */
 
 footer {
     background-color: #222;
@@ -216,262 +244,257 @@ footer a {
     color: inherit;
 }
 
-/* desktop */
+@media screen and (min-width: 760px) {
 
-.header-desktop {
-    display: flex;
-    background-color: #222;
-    color: #c78c06;
-    padding: 20px 50px;
-    align-items: center;
-}
+    /* desktop version */
 
-.header-desktop ul {
-    display: flex;
-    flex: 1;
-    list-style-type: none;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    gap: 20px;
-    padding: 0px 20px;
-}
+    /* header for desktop version */
 
-#desktop-home {
-    background-color: #c78c06;
-    color: #222;
-    padding: 10px;
-}
+    .header-desktop {
+        display: flex;
+        background-color: #222;
+        color: #c78c06;
+        padding: 20px 50px;
+        align-items: center;
+    }
 
-/* fix space issue like theres alot of margin on right */
+    .header-desktop ul {
+        display: flex;
+        flex: 1;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        gap: 20px;
+        padding: 0px 20px;
+    }
 
-.desktop-welcome {
-    background-image: url(images/main-banner.jpg);
-    color: white;
-}
+    #desktop-home {
+        background-color: #c78c06;
+        color: #222;
+        padding: 10px;
+    }
 
-.desktop-welcome {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: white;
-    background-image: url(images/main-banner.jpg);
-}
+    /* welcome page for desktop version */
 
-.desktop-welcome h3 {
-    font-size: 80px;
-    margin-bottom: 0;
-}
+    .desktop-welcome {
+        background-image: url(images/main-banner.jpg);
+        color: white;
+    }
 
-.desktop-welcome-text {
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 80px 80px;
-    padding: 10px;
-}
+    .desktop-welcome {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: white;
+        background-image: url(images/main-banner.jpg);
+    }
 
-#desktop-connect-btn {
-    background-color: #c78c06;
-    padding: 30px;
-    width: 200px;
-    border: none;
-}
+    .desktop-welcome h3 {
+        font-size: 80px;
+        margin-bottom: 0;
+    }
 
-#desktop-about {
-    display: flex;
-    background-color: #ffe6ac;
-}
+    .desktop-welcome-text {
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: 80px 80px;
+        padding: 10px;
+    }
 
+    #desktop-connect-btn {
+        background-color: #c78c06;
+        padding: 30px;
+        width: 200px;
+        border: none;
+    }
 
-.desktop-about-text {
-    padding: 20px;
-    flex-basis: 50%;
-}
+    /* about section for mobile version */
 
-#desktop-about img {
-    padding: 20px;
-}
+    #desktop-about {
+        display: flex;
+        background-color: #ffe6ac;
+    }
 
-/* 
-space is not evenly distrubuted bw text n image fix it */
-/* 
-services */
+    .desktop-about-text {
+        padding: 20px;
+        flex-basis: 50%;
+    }
 
-.desktop-services h3,
-p {
-    padding: 0 20px 0 20px;
-}
+    #desktop-about img {
+        padding: 20px;
+    }
 
-.desktop-services button {
-    margin-left: 20px;
-}
+    /* services for desktop version */
 
-.desktop-services-types {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
-}
+    .desktop-services h3,
+    p {
+        padding: 0 20px 0 20px;
+    }
 
-#digital-desktop,
-#marketing-desktop,
-#print-desktop,
-#web-desktop,
-#video-desktop {
-    background-color: #ffe6ac;
-}
+    .desktop-services button {
+        margin-left: 20px;
+    }
 
-.desktop-services-types :nth-child(2) {
-    grid-column: 2 / 3;
-    grid-row: 1;
-}
+    .desktop-services-types {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
 
-.desktop-services-types :nth-child(3) {
-    grid-column: 1 / 2;
-    grid-row: 2;
-}
+    #digital-desktop,
+    #marketing-desktop,
+    #print-desktop,
+    #web-desktop,
+    #video-desktop {
+        background-color: #ffe6ac;
+    }
 
-.desktop-services-types :nth-child(4) {
-    grid-column: 2 / 3;
-    grid-row: 2;
-}
+    .desktop-services-types :nth-child(2) {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
 
-.desktop-services-types :nth-child(5) {
-    grid-column: 3 / 4;
-    grid-row: 2;
-}
+    .desktop-services-types :nth-child(3) {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
 
-/* 
-vision */
+    .desktop-services-types :nth-child(4) {
+        grid-column: 2 / 3;
+        grid-row: 2;
+    }
 
-.vision-desktop {
-    background-image: url(images/vision.jpg);
-    color: white;
-    padding: 50px;
-    width: auto;
-}
+    .desktop-services-types :nth-child(5) {
+        grid-column: 3 / 4;
+        grid-row: 2;
+    }
 
-#vision-desktop-btn {
-    background-color: #0e253e;
-    border-color: coral;
-    color: white;
-    width: 200px;
-    padding: 30px;
-    font-size: 15px;
-}
+    /* vision for desktop version*/
 
-/* triangle icon issue bruhhh */
+    .vision-desktop {
+        background-image: url(images/vision.jpg);
+        color: white;
+        padding: 50px;
+        width: auto;
+    }
 
-/* 
-team desktop */
+    #vision-desktop-btn {
+        background-color: #0e253e;
+        border-color: coral;
+        color: white;
+        width: 200px;
+        padding: 30px;
+        font-size: 15px;
+    }
 
-.team-desktop {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+    /*team for desktop version */
 
-.team-desktop hr {
-    border: 1px solid coral;
-}
+    .team-desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
-#john-bob-desktop {
-    background-color: #ffe6ac;
-}
+    .team-desktop hr {
+        border: 1px solid coral;
+    }
 
-#john-desktop,
-#bob-desktop {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
+    #john-bob-desktop {
+        background-color: #ffe6ac;
+    }
 
-#john-img-desktop,
-#bob-img-desktop {
-    display: flex;
-    flex-direction: column;
-}
+    #john-desktop,
+    #bob-desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 
-#john-info-desktop,
-#bob-info-desktop h3,
-hr {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
+    #john-img-desktop,
+    #bob-img-desktop {
+        display: flex;
+        flex-direction: column;
+    }
 
-/* location n contact */
+    #john-info-desktop,
+    #bob-info-desktop h3,
+    hr {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
 
-#contact-location-desktop {
-    margin: 0 100px 0 100px;
-}
+    /* location and contact for desktop version */
 
-#contact-location-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 20px;
-}
+    #contact-location-desktop {
+        margin: 0 100px 0 100px;
+    }
 
-#contact-desktop,
-#location-desktop {
-    flex: 1;
-}
+    #contact-location-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 20px;
+    }
 
-#contact-desktop #message-desktop {
-    height: 100px;
-}
+    #contact-desktop,
+    #location-desktop {
+        flex: 1;
+    }
 
-#contact-desktop form {
-    display: flex;
-    flex-direction: column;
-}
+    #contact-desktop #message-desktop {
+        height: 100px;
+    }
 
-#send-desktop {
-    background-color: #222;
-    color: #c78c06;
-    height: auto;
-    width: 100px;
-    padding: 8px 16px;
-    margin-top: 20px;
-}
+    #contact-desktop form {
+        display: flex;
+        flex-direction: column;
+    }
 
-/* 
-for location i m not sure */
+    #send-desktop {
+        background-color: #222;
+        color: #c78c06;
+        height: auto;
+        width: 100px;
+        padding: 8px 16px;
+        margin-top: 20px;
+    }
 
-/* hrs of operation */
+    /* hrs of operation for desktop version */
 
-#hours-of-operation-desktop {
-    margin: 0 100px 0 100px;
-}
+    #hours-of-operation-desktop {
+        margin: 0 100px 0 100px;
+    }
 
-.hours-grid-desktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 20px;
-    gap: 0;
-}
+    .hours-grid-desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 20px;
+        gap: 0;
+    }
 
-.hours-grid-desktop p {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 0;
-}
+    .hours-grid-desktop p {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 0;
+    }
 
-.hours-grid-desktop p:nth-child(1),
-.hours-grid-desktop p:nth-child(2) {
-    background-color: #ffe6ac;
-}
+    .hours-grid-desktop p:nth-child(1),
+    .hours-grid-desktop p:nth-child(2) {
+        background-color: #ffe6ac;
+    }
 
+    /* footer for desktop version */
 
-/* footer */
+    footer {
+        background-color: #222;
+        color: #c78c06;
+        padding: 10px;
+    }
 
-footer {
-    background-color: #222;
-    color: #c78c06;
-    padding: 10px;
-}
-
-footer a {
-    color: inherit;
+    footer a {
+        color: inherit;
+    }
 }
